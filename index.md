@@ -30,7 +30,7 @@
 - QAQC Validation data all flows coupled through ADS
 
 ## Architecture before:
-![Architecture before](https://github.com/olozzalap/Almanac-presentation/blob/main/Architecture%20-%20PRE.jpg)
+![Architecture before](/Architecture%20-%20PRE.jpg)
 - SWA was solely in charge of each Events schema, attrbiutes and required form values
 - ADS sends all Events for the given Field to SWA
 - Issuance metadata api from ADS would send the yearly "Carbon" program id and deadlines
@@ -43,7 +43,7 @@
 - All 5 services inflexible to new requirements or programs
 
 ## Architecture after:
-![Architecture after](https://github.com/olozzalap/Almanac-presentation/blob/main/Architecture%20-%20POST.jpg)
+![Architecture after](/Architecture%20-%20POST.jpg)
 - Almanac now central source of truth for Events schema, attributes and required/optional values via api. SWA refactored to build dynamic Event forms per the schema.
 - Almanac sends list of available programs to SWA
 - Almanac sends active program per-each-Field, powering Field UI experience
